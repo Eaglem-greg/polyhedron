@@ -45,7 +45,7 @@ class TestPolyedr(unittest.TestCase):
              patch.object(self.polyedr.facets[3], 'check', return_value=False):
              expected_area = 0.0
              result = self.polyedr.total_area()
-             self.assertTrue(isclose(result, expected_area, rel_tol=1e-9))
+             self.assertTrue(isclose(result, expected_area))
 
     def test_take_homotetia_koef(self):
         self.assertEqual(self.polyedr.take_homotetia_koef(), 200)
