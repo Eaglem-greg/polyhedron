@@ -6,7 +6,7 @@ from shadow.polyedr import Polyedr
 
 tk = TkDrawer()
 try:
-    for name in ["king", "ccc"]:
+    for name in ["king", "ccc", "cube", "box"]:
         print("=============================================================")
         print(f"Начало работы с полиэдром '{name}'")
         polyedr = Polyedr(f"data/{name}.geom")
